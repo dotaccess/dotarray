@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DotAccess\\DotArray": "src/"
+            "DotAccess\\DotArray\\": "src/"
         }
     },
     "require-dev": {
@@ -28,6 +28,6 @@
     "suggest": {
         "exrray/exrray": "Array API",
         "pluggarray/pluggarray": "Pluggable array walker",
-	"concept-labs/singularity": "PSR Container. Powerfull aAnd Flexable Dependency Injection pack"
+        "concept-labs/singularity": "PSR Container. Powerfull aAnd Flexable Dependency Injection pack"
     }
 }
