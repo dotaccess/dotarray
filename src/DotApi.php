@@ -1,7 +1,7 @@
 <?php
 namespace DotAccess\DotArray;
 
-use AA\Api as ArrayApi;
+use ArrayApi\Api as ArrayApi;
 
 /**
  * DotArray
