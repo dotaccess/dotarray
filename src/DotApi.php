@@ -117,14 +117,17 @@ class DotApi extends ArrayApi
         }
     }
 
+    
     public static function walk(array &$array, callable $callback, ?string $path = null): void
     {
         foreach ($array as $key => &$value) {
 
-            $callback($value, $key);
+            $curPath = $path ? "{$path}.{$key}" : $key;
+
+            $callback($curPath, $value);
 
             if (is_array($value)) {
-                static::walk($value, $callback);
+                static::walk($value, $callback, $curPath);
             } else {
                 //$callback($value, $key);
             }
